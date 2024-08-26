@@ -1,0 +1,17 @@
+:root{
+    --branco:#ffffff ;
+    --laranja: #EB9B00;
+    --azul-lista: #002F52;
+    --cinza: #EBECEE;
+    --preto:#000000;
+    --banner-azul:90deg, #326589, #002F52;
+    --cinza-footer:#474646;
+    --cinza-categorias-footer:#858585;
+
+
+
+    /* fontes */
+
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+}

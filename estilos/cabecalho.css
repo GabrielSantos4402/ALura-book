@@ -1,0 +1,216 @@
+.cabecalho{
+    background-color: var(--branco);
+}
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-menu--cabecalho{
+    display: flex;
+    align-items: center;
+}
+.navegacao__botoes-titulo-negrito{
+    display: none;
+}
+.box-botoes-header{
+    display: flex;
+    gap: 1.4rem;
+    padding-right: 2rem;
+}
+.box-botoes-header .botoes-header{
+    width: 40px;
+    height: 40px;
+}
+
+.opcoes-nav .box-botoes-nav{
+    display: none;
+}
+
+.botoes-header-textos{
+    display: none;
+}
+
+
+/* Configuração do menu hamburguer */
+.navegacao__menu-hamburguer{
+    background-position: center;
+    background-image: url(../imgs/imagens/Menu.svg);
+    width:98px;
+    height:98px;
+    display: block;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.check-botao{
+    display: none;
+}
+.check-botao:checked ~ .lista-menu{
+    display: block;
+}
+.lista-menu{
+    z-index: 999;
+    width: 330px;
+    background-color: var(--branco);
+    padding: 0 0 0 20px;
+    list-style-type: none;
+    top: 6em;
+    position: absolute;
+    display: none;
+
+}
+
+.lista-menu__titulo{
+    padding-top: 5%;
+    font-family: "Poppins", sans-serif;
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.lista-menu__item{
+    padding: 6% 0;
+    font-family: "Poppins" ,  sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+  
+}
+.lista-menu__link{
+    color: var(--azul-lista);
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------ */
+
+@media screen and (min-width: 1024px){
+    .cabecalho{
+        padding: 1rem 5rem;
+        justify-content: space-between;
+    }
+
+     
+    .navegacao__menu-hamburguer{
+        display: none;
+    }
+
+    .navegacao__botoes{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: initial;
+    }
+    .box-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo-alura{
+        width: 4 0px;
+    }
+    .navegacao__botoes-titulo-negrito,
+    .navegacao__botoes-titulo{
+        font-size: 30px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    .navegacao__botoes-titulo-negrito{
+        display: block;
+        font-weight: 700;
+    }
+    .box-botoes-header{
+        padding: 0;
+        width: 17%;
+        justify-content: space-between;
+    }
+    .botoes-header-fav{
+        display: none;
+    }
+    .opcoes-nav .box-botoes-nav{
+        display: flex;
+        gap: 20px;
+    }
+    .opcoes-item{
+        text-transform: uppercase;
+        list-style-type: none;
+        font-family: var(--fonte-principal);
+        font-size: 16px;
+        padding: 1rem;
+    } 
+    .opcoes-item:hover{
+        background: linear-gradient(var(--banner-azul));
+        color: var(--branco);
+    }
+    .opcao-categoria{
+        position: relative;
+    }
+   
+    .lista-menu-categoria{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.54rem;
+        background-color: var(--branco);
+        width: 19%;
+
+    }
+    .lista-menu__categoria-item{
+        color: var(--preto);
+        padding: 1rem 0 1rem 1.5rem;
+        list-style-type: none;
+
+
+    }
+    .lista-menu__categoria-item:hover{
+        background: linear-gradient(var(--banner-azul));
+        color: var(--branco);
+    }
+
+    .lista-menu-links{
+        font-family: var(--fonte-principal);
+        font-size: 1rem;
+        text-decoration: none;
+        color: inherit;
+    }
+    .check-botao-categoria{
+        display: none;
+    }
+    .check-botao-categoria:checked ~ .lista-menu-categoria{
+        display: none;
+    }
+    
+
+}
+@media screen and (min-width:1728px) {
+    .navegacao{
+        display: flex;
+    }
+    .opcoes-nav{
+        width:55%;
+    }
+
+    .box-botoes-header{
+        justify-items: flex-end;
+        width: 25%;
+    }
+    .box-botoes-header .botoes-header-links{
+        gap: 5px;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+    }
+    .box-botoes-header .botoes-header{
+        width: 15%;
+        height: 30px;
+    }
+    .box-botoes-header .botoes-header-links .botoes-header-textos{
+        font-size: 20px;
+        font-family: var(--fonte-secundaria);
+        color: var(--preto);
+        display: flex;
+
+
+    }
+}

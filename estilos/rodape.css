@@ -1,0 +1,109 @@
+.rodape{
+    background-color: var(--branco);
+    padding: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.rodape h2{
+    width:80%;
+    font-size: 18px;
+    color: var(--azul-lista);
+}
+.rodape p{
+    width: 75%;
+    font-size: 16px;
+    color: var(--azul-lista);
+}
+.rodape input{
+    width: 100%;
+    border-radius: 20px;
+    padding: 3%;
+    position: relative;
+}
+.rodape input::placeholder{
+    padding: 0 0 0 1.5rem;
+    left: 20px;
+    position: absolute;
+    background-image: url(../imgs/imagens/Email.svg);
+    background-repeat: no-repeat;
+}
+.rodape-real{
+    display: none;
+}
+@media screen and (min-width:1024px) {
+    .rodape{
+        padding: 0;
+        margin:4% 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .rodape-textos{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .rodape-textos h2{
+        width: 70%;
+        font-family: var(--fonte-secundaria);
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .rodape-textos p{
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+    }
+    .email-feedback{
+        width: 70%;
+    }
+    /* ================================ */
+
+    .rodape-real{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+    .lista-footer{
+        list-style-type: none;
+    }
+    .lista-footer li{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0;
+
+        font-family: var(--fonte-secundaria);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--cinza-footer);
+    }
+    .lista-footer li:first-of-type{
+        padding-top: 10px;
+    }
+    .lista__footer-categorias{
+        color: var(--cinza-categorias-footer);
+        font-size: 14px;
+        font-family: var(--fonte-secundaria);
+        text-transform: uppercase;
+    }
+    .lista__footer-titulo{
+        margin: 0;
+    }
+    .lista__footer-titulo strong{
+        margin: 0;
+        font-size: 24px;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+    }
+}
+@media screen and (min-width: 1728px) {
+    .rodape{
+        margin: 3% 20%;
+    }
+    .rodape-real{
+        margin: 0 15%;
+    }
+}
